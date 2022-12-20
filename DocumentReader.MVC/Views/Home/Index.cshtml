@@ -1,0 +1,20 @@
+@model DocumentInfo
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="display-4">Demo App</h1>
+<div class="container">
+    <form method="post" class="form-inline">
+        <div class="form-group">
+            <label asp-for="FolderPath"></label>: <input asp-for="FolderPath" />
+            <span>(Enter the path following the root on the fileshare)</span>
+        </div>
+        <div class="form-group">
+            <label asp-for="FileName"></label>: <input asp-for="FileName" />
+        </div>
+        <button type="submit">Open file from SharePoint</button>
+        <p style="color:red">@ViewBag.ErrorMessage</p>
+    </form>
+</div>
+
