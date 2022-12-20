@@ -43,7 +43,7 @@ namespace DocumentReader.MVC.Controllers
                 ViewBag.ErrorMessage = "File not found";
                 return View();
             }
-            //ViewBag.ErrorMessage = String.Empty;
+
             var ms = new MemoryStream();
             using (var fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
             {
