@@ -35,7 +35,7 @@
     * Scope = Storage
     * Role = Storage Blob Data Contributor
     * Resource Name = your-storage-account-name
-* Select Logic app code view and replace the following placeholders
+* Select Logic app code view, paste the contents with LogicApp/SPSyncLogicApp.json, and replace the following placeholders
   * {SHAREPOINT_URL} -> your-tenant
   * {SUBSCRIPTION_ID} -> your-subscription-guid
   * {LIST_ID} -> guid for SharePoint List, get this by going to Document Settings of library and looking at the url
